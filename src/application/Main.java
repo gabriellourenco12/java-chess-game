@@ -1,4 +1,4 @@
-package com.org;
+package application;
 
 public class Main {
 
