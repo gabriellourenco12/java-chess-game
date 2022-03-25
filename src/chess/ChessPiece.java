@@ -5,7 +5,7 @@ import boardgame.Piece;
 import lombok.Getter;
 import lombok.NonNull;
 
-public class ChessPiece extends Piece {
+public abstract class ChessPiece extends Piece {
 
     @Getter
     private Color color;
