@@ -6,10 +6,19 @@ import boardgame.Position;
 import lombok.Getter;
 import lombok.NonNull;
 
+@Getter
 public abstract class ChessPiece extends Piece {
 
-    @Getter
     private Color color;
+    private int moveCount;
+
+    public void increaseMoveCount() {
+        moveCount++;
+    }
+
+    public void decreaseMoveCount() {
+        moveCount--;
+    }
 
     public ChessPosition getChessPosition() {
         return ChessPosition.fromPosition(position);
