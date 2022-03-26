@@ -11,6 +11,10 @@ public abstract class ChessPiece extends Piece {
     @Getter
     private Color color;
 
+    public ChessPosition getChessPosition() {
+        return ChessPosition.fromPosition(position);
+    }
+
     public ChessPiece(@NonNull Board board, Color color) {
         super(board);
         this.color = color;
